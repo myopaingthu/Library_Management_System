@@ -79,8 +79,6 @@ class IssueBookService implements IssueBookServiceInterface
     public function sendMailToUsers()
     {
         $users = $this->issueBookDao->getUsersToNotify();
-        foreach ($users as $user) {
-            Mail::to($user)->send(new RemindUserMail());
-        }
+        Mail::to($users)->send(new RemindUserMail());
     }
 }
