@@ -11,17 +11,14 @@ class RemindUserMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    private $book_names;
-
     /**
      * Create a new message instance.
      *
-     * @param array $book_names
      * @return void
      */
-    public function __construct($book_names)
+    public function __construct()
     {
-        $this->book_names = $book_names;
+
     }
 
     /**
@@ -32,7 +29,6 @@ class RemindUserMail extends Mailable
     public function build()
     {
         return $this->subject('Book Return Date Overdue')
-            ->view('mails.user-notify-mail')
-            ->with('book_names', $this->book_names);
+            ->view('mails.user-notify-mail');
     }
 }

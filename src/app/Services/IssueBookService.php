@@ -80,11 +80,7 @@ class IssueBookService implements IssueBookServiceInterface
     {
         $users = $this->issueBookDao->getUsersToNotify();
         foreach ($users as $user) {
-            $book_names = [];
-            foreach ($user->bookIssues as $book_issue) {
-                $book_names[] = $book_issue->book->name;
-            }
-            Mail::to($user)->send(new RemindUserMail($book_names));
+            Mail::to($user)->send(new RemindUserMail());
         }
     }
 }
