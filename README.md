@@ -5,8 +5,7 @@ Library Management System for Interview Task
 
 ## Setup Guide for Laravel without docker
 ```
-git clone https://github.com/myopaingthu/Library_Book_Management_System.git
-git checkout dev-myo-paing-thu
+git clone https://github.com/myopaingthu/Library_Management_System.git
 cd into cloned project folder
 cd src
 run composer install
@@ -59,4 +58,4 @@ MAIL_FROM_NAME="${APP_NAME}"
 ```
 
 ## How to get app password from gmail
-![App Password](https://www.getmailbird.com/gmail-app-password/)
+[App Password](https://www.getmailbird.com/gmail-app-password/)
