@@ -39,6 +39,13 @@ run php artisan key:generate
 can be accessed at http://localhost:8000/
 run php artisan schedule:work to test schedule
 ```
+
+## Login credentials for admin dashboard
+```
+email => admin@gmail.com
+password => password
+```
+
 ## Versions I have used
 - PHP => ^7.3|^8.0
 - Laravel framework => ^8.75
