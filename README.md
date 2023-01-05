@@ -1,7 +1,5 @@
-# Myo Paing Thu
-
 ## Name
-Library Management System for Interview Task
+Library Management System
 
 ## Setup Guide for Laravel without docker
 ```
